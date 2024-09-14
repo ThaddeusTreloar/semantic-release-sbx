@@ -10,4 +10,3 @@ MODULE="$MODULE$(echo "$GIT_LOG" | ggrep '^perf(' | ggrep -Po '(?<=: \()[^)]+')"
 MODULE="$MODULE$(echo "$GIT_LOG" | ggrep '^BREAKING CHANGE:' | ggrep -Po '(?<=: \()[^)]+')"
 
 echo $MODULE
-
